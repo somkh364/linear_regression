@@ -1,0 +1,15 @@
+Package: LinReg
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2017-09-22
+Authors@R: c(
+    person("Somaya", "Khoda Bakhsh", email = "somkh364@student.liu.se", role = "cre"),
+    person("Thi", "Phalm", email = "Thiph169@student.liu.se", role = "aut"))
+Maintainer: Somaya <somkh364@student.liu.se>
+Description: This package handle multipal linear regressions.
+License: CC0
+LazyData: true
+Depends: R (>= 2.10)
+RoxygenNote: 6.0.1
+Suggests: testthat
