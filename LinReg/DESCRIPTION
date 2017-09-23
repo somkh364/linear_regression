@@ -1,6 +1,6 @@
 Package: LinReg
 Type: Package
-Title: What the package does (short line)
+Title: Linear Regression
 Version: 1.0
 Date: 2017-09-22
 Authors@R: c(
@@ -12,4 +12,7 @@ License: CC0
 LazyData: true
 Depends: R (>= 2.10)
 RoxygenNote: 6.0.1
-Suggests: testthat
+Suggests: testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

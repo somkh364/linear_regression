@@ -1,23 +1,21 @@
 
-#' Title
+#' LinearRegression
 #'
-#' @field formula formula. 
+#' @field formula formula. y ~ x_1 + x_2 + ... + x_n.
 #' @field data data.frame. 
-#' @field beta_hat matrix. 
-#' @field y_hat matrix. 
-#' @field e_hat matrix. 
-#' @field df numeric. 
-#' @field var_sigma_hat numeric. 
-#' @field p_value matrix. 
-#' @field t_value matrix. 
-#' @field var_beta_hat matrix. 
-#' @field data_name character. 
-#'
-#' @return
+#' @description Returns the result of the Linear Regression
+#' @examples 
+#' data(iris)
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$print()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$plot()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$resid()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
+#' linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
+#' @return  linReg
 #' @export
 #'
-#' @examples
-#' 
+
 linreg <- setRefClass(
   Class = "linreg",
   fields = list(

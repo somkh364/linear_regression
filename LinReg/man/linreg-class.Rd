@@ -4,37 +4,28 @@
 \name{linreg-class}
 \alias{linreg-class}
 \alias{linreg}
-\title{Title}
+\title{LinearRegression}
+\value{
+linReg
+}
 \description{
-Title
+Returns the result of the Linear Regression
 }
 \section{Fields}{
 
 \describe{
-\item{\code{formula}}{formula.}
+\item{\code{formula}}{formula. y ~ x_1 + x_2 + ... + x_n.}
 
 \item{\code{data}}{data.frame.}
-
-\item{\code{beta_hat}}{matrix.}
-
-\item{\code{y_hat}}{matrix.}
-
-\item{\code{e_hat}}{matrix.}
-
-\item{\code{df}}{numeric.}
-
-\item{\code{var_sigma_hat}}{numeric.}
-
-\item{\code{p_value}}{matrix.}
-
-\item{\code{t_value}}{matrix.}
-
-\item{\code{var_beta_hat}}{matrix.}
-
-\item{\code{data_name}}{character.}
 }}
 
 
 \examples{
-
+data(iris)
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$print()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$plot()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$resid()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$pred()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$coef()
+linreg$new(Petal.Length~Sepal.Width+Sepal.Length, data=iris)$summary()
 }
